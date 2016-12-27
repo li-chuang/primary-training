@@ -9,9 +9,9 @@ public class ScannerTest {
 		
 		System.out.println(name+" , 你好~");
 		
-		
+		int number = scanner.nextInt();
+		System.out.println("年龄 :"+ number);
 		 
 	}
 
 }
-a
