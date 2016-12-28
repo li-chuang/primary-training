@@ -7,8 +7,11 @@ public class ScannerTest {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String name = scanner.nextLine();
-		
-		System.out.println(name+" , 你好~");
+		if("Alice".equalsIgnoreCase(name)){		
+			System.out.println(name+" , 你好~");
+		} else{
+			System.out.println("Who are you ?");
+		}
 		
 		int number = scanner.nextInt();
 		System.out.println("年龄 :"+ number);
