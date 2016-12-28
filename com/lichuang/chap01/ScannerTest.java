@@ -20,10 +20,13 @@ public class ScannerTest {
 			System.out.println("输入的不是数字");
 		}
 		
-		scanner = new Scanner("我的手机号码是13942583366");
-		Pattern pattern = Pattern.compile("[0-9]+");
-		String phoneNumber = scanner.findInLine(pattern);
+		scanner = new Scanner("我的手机号码是13942583366,邮编是430100");
+		Pattern pattern1 = Pattern.compile("[0-9]{13}");
+		Pattern pattern2 = Pattern.compile("[0-9]{6}");
+		String phoneNumber = scanner.findInLine(pattern1);
+		String mailNumber = scanner.findInLine(pattern2);
 		System.out.println("我的手机号码是： "+ phoneNumber);
+		System.out.println("我的邮编是："+ mailNumber);
 		 
 	}
 
