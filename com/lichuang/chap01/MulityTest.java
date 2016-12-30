@@ -21,5 +21,4 @@ public class MulityTest {
 			System.out.println("");
 		}
 	}
-
 }
