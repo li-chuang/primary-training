@@ -18,11 +18,9 @@ public class MulityTest {
 			for(int j = 1;j<=i;j++){
 				//System.out.print(format.format(j)+" * "+format.format(i) +" = " +format.format(i*j)+"  ");
 				//String.format("%04d", youNumber)
-				System.out.print(String.format("%3d", j)+" *"+String.format("%3d", i) +" =" +String.format("%3d", i*j)+"  ");
-				
+				System.out.print(String.format("%3d", j)+" *"+String.format("%3d", i) +" =" +String.format("%3d", i*j)+"  ");				
 			}
 			System.out.println("");
 		}
 	}
-
 }
