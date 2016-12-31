@@ -10,6 +10,7 @@ import java.text.DecimalFormat;
 public class MulityTest {
 	public static void main(String[] args) {
 		mulity(12);
+		
 	}
 	
 	private static void mulity(int n){
