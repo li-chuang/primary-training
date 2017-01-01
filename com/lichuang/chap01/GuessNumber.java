@@ -10,6 +10,7 @@ public class GuessNumber {
 		int guessNumber = random.nextInt(100);
 		
 		boolean isContinue = true;
+		int count = 0;
 		
 		System.out.println("游戏开始！");
 		while(isContinue){		
@@ -24,8 +25,9 @@ public class GuessNumber {
 			} else{
 				System.out.println("太小了");
 			}
+			count++;
 		}
-		System.out.println("游戏结束！");
+		System.out.println("游戏结束！回答总次数："+count);
 		
 		
 	}
