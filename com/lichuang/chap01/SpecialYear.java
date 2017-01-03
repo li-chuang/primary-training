@@ -4,12 +4,13 @@ import java.util.Calendar;
 
 /**
  * 打印出接下来的n个闰年
+ * 1900,2100都不是闰年
  *
  */
 public class SpecialYear {
 
 	public static void main(String[] args) {
-		getSpecialYear(20);
+		getSpecialYear(25);
 	}
 
 	private static void getSpecialYear(int number) {
