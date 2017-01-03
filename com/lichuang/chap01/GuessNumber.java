@@ -39,5 +39,4 @@ public class GuessNumber {
 		System.out.println("游戏结束！回答总次数："+count);
 	}
 	
-	
 }
