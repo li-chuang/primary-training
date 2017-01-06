@@ -16,6 +16,7 @@ public class ReversTest {
 		list.add("C");
 		list.add("D");
 		list.add("E");
+		list.add("F");
 		System.out.println(reverse(list));
 		
 	}
