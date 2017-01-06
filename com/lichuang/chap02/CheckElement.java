@@ -15,7 +15,8 @@ public class CheckElement {
 		list.add("hello");
 		list.add("world");
 		list.add(2);
-		boolean flag =  checkElement(list,"hello");
+		list.add(false);
+		boolean flag =  checkElement(list,true);
 		System.out.println("是否存在："+flag);
 		
 	}
