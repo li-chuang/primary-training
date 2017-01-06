@@ -1,6 +1,7 @@
 package com.lichuang.chap02;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -15,8 +16,10 @@ public class ThreeSum {
 		list.add(3);
 		list.add(4);
 		list.add(5);
-		int sum = forSum(list);
-		System.out.println(sum);
+		int sum1 = forSum(list);
+		int sum2 = forWhile(list);
+		System.out.println(sum1);
+		System.out.println(sum2);
 	}
 	
 	private static int forSum(List<Integer> list){
@@ -24,8 +27,17 @@ public class ThreeSum {
 		for(Integer number : list){
 			sum += number;
 		}	
+		return sum;		
+	}
+	
+	private static int forWhile(List<Integer> list){
+		int sum = 0;
+		Iterator<Integer> iter = list.iterator();
+		while (iter.hasNext()) {
+			Integer integer = (Integer) iter.next();
+			sum += integer;
+		}
 		return sum;
-		
 	}
 
 }
