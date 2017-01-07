@@ -17,7 +17,7 @@ public class ThreeSum {
 		list.add(4);
 		list.add(5);
 		int sum1 = forSum(list);
-		int sum2 = forWhile(list);
+		int sum2 = forIterator(list);
 		System.out.println(sum1);
 		System.out.println(sum2);
 	}
@@ -30,7 +30,7 @@ public class ThreeSum {
 		return sum;		
 	}
 	
-	private static int forWhile(List<Integer> list){
+	private static int forIterator(List<Integer> list){
 		int sum = 0;
 		Iterator<Integer> iter = list.iterator();
 		while (iter.hasNext()) {
