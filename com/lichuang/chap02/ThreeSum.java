@@ -16,10 +16,13 @@ public class ThreeSum {
 		list.add(3);
 		list.add(4);
 		list.add(5);
+		list.add(6);
 		int sum1 = forSum(list);
-		int sum2 = forIterator(list);
+		int sum2 = forWhile(list);
+		int sum3 = forIterator(list);
 		System.out.println(sum1);
 		System.out.println(sum2);
+		System.out.println(sum3);
 	}
 	
 	private static int forSum(List<Integer> list){
@@ -28,6 +31,16 @@ public class ThreeSum {
 			sum += number;
 		}	
 		return sum;		
+	}
+	
+	private static int forWhile(List<Integer> list){
+		int sum = 0;
+		int count =0;
+		while(count<list.size()){
+			sum +=list.get(count);
+			count++;
+		}
+		return sum;
 	}
 	
 	private static int forIterator(List<Integer> list){
