@@ -18,6 +18,8 @@ public class MergeList {
 		list2.add(1);
 		list2.add(2);
 		list2.add(3);
+		list2.add(4);
+		list2.add(5);
 		
 		List<Object> list = new ArrayList<Object>();
 		if(list1.size() >= list2.size()){
@@ -33,11 +35,14 @@ public class MergeList {
 		List<Object> list = new ArrayList<Object>();
 		int i = 0;
 		int j = 0;
-		while(i<list1.size() && j<list2.size()){
-			list.add(list1.get(i++));
-			list.add(list2.get(j++));
-		}
-		
+		while(i<list1.size() || j<list2.size()){
+			if(i != list1.size()){				
+				list.add(list1.get(i++));
+			}
+			if(j != list2.size()){			
+				list.add(list2.get(j++));
+			}
+		}	
 		return list;
 	}
 	
