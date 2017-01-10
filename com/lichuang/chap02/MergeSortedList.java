@@ -22,6 +22,8 @@ public class MergeSortedList {
 		list2.add(4);
 		list2.add(6);
 		list2.add(8);
+		list2.add(9);
+		list2.add(10);
 		List<Integer> list = mergeSortedList(list1, list2);
 
 		System.out.println(list);
@@ -37,19 +39,26 @@ public class MergeSortedList {
 		int num1 = 0;
 		int num2 = 0;
 		while (i != list1.size() || j != list2.size()) {
-			if(i < list1.size()){
+			if(i < list1.size() && j < list2.size()){
 				num1 = list1.get(i);
-			}
-			if(j <list2.size()){
 				num2 = list2.get(j);
-			}
-			if (num1 <= num2) {
-				list.add(num1);
-				i++;
-			} else {
+				if (num1 <= num2) { 
+					list.add(num1);
+					i++;
+				} else {
+					list.add(num2);
+					j++;
+				}
+			} else if(i>=list1.size()){
+				num2 = list2.get(j);
 				list.add(num2);
 				j++;
+			} else if(j>=list2.size()){
+				num1 = list1.get(i);
+				list.add(num1);
+				i++;
 			}
+			
 		}
 		return list;
 	}
