@@ -17,6 +17,9 @@ public class MergeSortedList {
 		list1.add(3);
 		list1.add(5);
 		list1.add(7);
+		list1.add(11);
+		list1.add(12);
+		list1.add(13);
 		List<Integer> list2 = new ArrayList<Integer>();
 		list2.add(2);
 		list2.add(4);
