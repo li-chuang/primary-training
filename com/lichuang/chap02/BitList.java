@@ -2,16 +2,18 @@ package com.lichuang.chap02;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * 返回指定数的各位数字的列表
  * 
- *
  */
 public class BitList {
 
 	public static void main(String[] args) {
-		List<Integer> list = getBit(21395);
+		Scanner scanner = new Scanner(System.in);
+		int count = scanner.nextInt();
+		List<Integer> list = getBit(count);
 		List<Integer> result = new ArrayList<Integer>();
 		int size = list.size();
 		for (int i = 0; i < size; i++) {
