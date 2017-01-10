@@ -11,17 +11,22 @@ import java.util.List;
 public class BitList {
 
 	public static void main(String[] args) {
-		List<Integer> list = getBit(213);
-		System.out.println(list);
+		List<Integer> list = getBit(21395);
+		List<Integer> result = new ArrayList<Integer>();
+		int size = list.size();
+		for (int i = 0; i < size; i++) {
+			result.add(list.get(size - i - 1));
+		}
+		System.out.println(result);
 	}
-	
-	private static List<Integer> getBit(int number){
+
+	private static List<Integer> getBit(int number) {
 		List<Integer> list = new ArrayList<Integer>();
-		int leave = number/10;
-		while(leave >= 10){
+		// int leave = number/10;
+		while (number > 0) {
 			int bit = number % 10;
 			list.add(bit);
-			leave = number/10;
+			number = number / 10;
 		}
 		return list;
 	}
