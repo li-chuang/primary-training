@@ -32,4 +32,5 @@ public class BitList {
 		}
 		return list;
 	}
+	
 }
