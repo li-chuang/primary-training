@@ -31,6 +31,5 @@ public class BitList {
 			number = number / 10;
 		}
 		return list;
-	}
-	
+	}	
 }
