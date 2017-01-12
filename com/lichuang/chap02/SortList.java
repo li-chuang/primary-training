@@ -7,7 +7,9 @@ package com.lichuang.chap02;
 public class SortList {
 	public static void main(String[] args) {
 		int[] result = selectionSort(new int[]{12,5,8,9,10,16,1,3,6});
-		System.out.println(result);
+		for(int num : result){
+			System.out.print(num + " ");
+		}
 	}
 	
 	//选择排序
